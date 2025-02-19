@@ -9,6 +9,9 @@
 # Compressed storage
 .RDS
 
+# figures
+.pdf
+
 # User-specific files
 .Ruserdata
 
