@@ -7,3 +7,10 @@ There are three folders: data, code, and figures. The contents of each folder an
 data:
 1) fish_abund_cleaned.csv: table of fish abundance data, derived from https://doi.org/10.6073/pasta/a29a6e674b0f8797e13fbc4b08b92e5b. Column headings as follows. SampleID: unique identifier for sampling event. Taxa: species caught (scientific name). Count: number caught. Date: date of sampling event (mm/dd/YY). Source: name of monitoring study providing this sample. Method: sampling method. Station: sampling station numeric code. Subregion: geographic subregion, based on those used by the California Department of Fish and Wildlife. Region: geographic region, based on those used by the California Department of Fish and Wildlife. Effort: samping effort (tow volume). CPUE: catch per unit effort (Count/Effort).
 2) species_details.csv: table of information about each species. Column headinds as follows. Scientific name: binomial scientific species name. Common name: species common name. Salinity: salinity zone(s) associated with each fish species. Water Column: water column zones associated with each species. Family: taxonomic family. Native: native to California or non-native (yes/no).
+
+code:
+1) apply_ewi_abund.R: run this script first. Makes aggregated time series from data in fish_abund_cleaned.csv, applies EWI statistics in moving windows, outputs .RDS files (to data folder) used by ewi_trends_abund.R.
+2) ewi_trends_abund.R: run this script second. Measures temporal trends in EWI statistics, synthesizes into composite EWI and confidence scores, and reproduces figures in the manuscript main text and supplementary material.
+
+figures:
+1) placeholder.txt: a placeholder file. This directory will be populated when the scripts are run.
