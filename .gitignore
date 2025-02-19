@@ -6,6 +6,9 @@
 .RData
 .RDataTmp
 
+# Compressed storage
+.RDS
+
 # User-specific files
 .Ruserdata
 
